@@ -1,0 +1,18 @@
+h2{
+    text-align: center;
+    color: darkslategray;
+    font-size: 50px;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+    color: dodgerblue;
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+ul>*{
+    margin-right: 10px; display: inline-block; font-weight: bold;
+}

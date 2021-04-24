@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>폼</h2>
+    <form action="3_폼.html" method="GET">
+
+        <p> ID : <input type="text" size="30" maxlength="20"
+            placeholder="아이디를 입력하세요" value="apple" required></p>
+
+        <p> PW : <input type="password" minlength="8" maxlength="20" placeholder="비밀번호를 입력하세요" required></p>
+
+        <fieldset>
+            <legend>성별</legend>
+            <label> 남<input type="radio" name="gender" value="남자" checked></label> <label> 여<input type="radio"name="gender" value="여자"></label>
+        </fieldset>
+
+        <p>
+            <fieldset>
+                <legend>취미</legend>
+                <label>식물키우기<input type="checkbox" name="hobby" value="식물키우기"></label>
+                <label>게임<input type="checkbox" name="hobby" value="게임"></label>
+                <label>낚시<input type="checkbox" name="hobby" value="낚시"></label>
+                <label>영화보기<input type="checkbox" name="hobby" value="영화보기"></label>
+                <label>골프<input type="checkbox" name="hobby" value="골프"></label>
+            </fieldset>
+
+        </p>
+        <p>사진 <input type="file"></p>
+
+        <p>선택 
+            <select name="select" id="select">직업
+                <option value="학생">학생</option>
+                <option value="조무사">조무사</option>
+                <option value="백수">백수</option>
+                <option value="백앤드">백앤드</option>
+                <option value="야구선수">야구선수</option>
+                <option value="주부">주부</option>
+                <option value="농부">농부</option>
+            </select>
+        </p>
+
+        <p>내용</p>
+        <p><textarea name="area" id="area" cols="50" rows="5"placeholder="내용을 입력하세요"></textarea></p>
+
+        
+        <p>이메일 <input type="email"></p>
+        <p>웹사이트 <input type="url" disabled></p>
+        <p>전화번호 <input type="tel"></p>
+        <p><input type="date"></p>
+        <p>원하는 숫자<input type="number" min="0" max="500" step="5"></p>
+        <p>색상 <input type="color"></p>
+        <p>검색<input type="search"value="기본값" readonly></p>
+        <p>프로그래밍 능력<input type="range"min="1" max="100" value="50"></p>
+
+        <p>관심분야<input type="text" list="interest">
+            <datalist id="interest">
+                <option value="자동차" label="테크놀로지"></option>
+                <option value="가전제품" label="테크놀로지"></option>
+                <option value="소프트웨어" label="테크놀로지"></option>
+                <option value="TV/연애" label="엔터테이먼트"></option>
+                <option value="게임" label="엔터테이먼트"></option>
+                <option value="공연" label="엔터테이먼트"></option>
+                <option value="음악" label="엔터테이먼트"></option>
+            </datalist>
+        </p>
+        
+        <p><button>버튼태크</button></p>
+        <p><input type="button" value="버튼" onclick="alert('클릭')"></p>
+        <p><input type="reset" value="reset"></p>
+        <p><input type="submit" value="전달"></p>
+
+    </form>
+</body>
+</html>

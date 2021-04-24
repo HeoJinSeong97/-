@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 독립적으로 css가 들어간 요소 */
+        /* [title ~= "css"]{color: red;} */
+
+        /* css가 들어간 모든 요소 */
+        /* [title *= "css"]{color:red;} */
+
+        /* 속성값이 접두사로 시작되는 모든 문자를 가지는 요소 */
+        /* [title ^= "css"]{color:violet;} */
+        
+        /* 속성값이 접미사로 끝나는 모든 문자를 가지는 요소 */
+        /* [title $= "css"]{color:tomato;} */
+
+        /* 속성값이 접두사로 시작되는 문자 중에서 완벽히 일치하는 문자 또는 '-'으로 연결된 문자 */
+        /* [title |= "css"]{color:teal;} */
+
+    </style>
+</head>
+<body>
+    <h2>속성선택자2</h2>
+    <p title="css">독립적인 단어</p>
+    <p title="css-funny">하이픈이 들어간 합성어</p>
+    <p title="funny_css">언더바이 들어간 합성어</p>
+    <p title="funny css">공백이 들어간 합성어</p>
+    <p title="css funny">공백으로 연결된 합성어</p>
+    <p title="funnycss">공백이 없는 합성어(접미사)</p>
+    <p title="cssfunny">공백이 없는 합성어(접두사)</p>
+    
+
+</body>
+</html>

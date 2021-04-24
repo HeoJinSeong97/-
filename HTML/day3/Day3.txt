@@ -131,3 +131,7 @@ file-zila 다운로드
 filezilla-project.org/
 실행 후 파일 > 사이트 관리자 > new site (호스트 사용자 입력) > 확인
 
+과제
+news.html에 인터넷 기사 1개를 선택하여 이미지 및 서식태그를 이용하여 페이지 만들기
+
+
