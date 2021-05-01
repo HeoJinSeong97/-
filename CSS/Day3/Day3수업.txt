@@ -1,0 +1,114 @@
+https://docs.google.com/spreadsheets/d/1zMuDoCg4xgazn6mlCjc5k1bn2tt4z3V7KNRbQ-85Rio/edit#gid=0
+
+박스 모델(BOX MODEL)
+
+내용(CONTENT)
+텍스트나 이미지가 들어있는 박스와 실질적인 내용 부분
+
+padding
+내용과 테두리 사이의 간격
+padding-top : 위쪽
+.......-right,left,bottom..
+모든 패딩 속성을 한꺼번에 설정. 방향은 위부터 시작해서 시계방향으로 설정.
+padding: 10px 10px 12px 20px;
+padding: 10px 12px 20px; 오른쪽 왼쪽을 12px로 한다.
+padding: 10px 20px; 위를 10px 아래를 20px로 한다.
+
+테두리 border
+내용(content)과 패딩 주변을 감싸는 테두리
+
+border-style
+테두리를 다양한 모양으로 설정할 수 있음
+(solid(직선) dotted(점선), dashed, double);
+
+border-color
+테두리 색상을 설정-기본 검정
+
+border-size
+테두리 두께 설정
+
+border
+모든 테두리 속성을 한꺼번에 설정가능
+
+
+
+마진(margin)
+테두리와 이웃하는 요소 사이의 간격
+
+*세로 곂침 현상
+세로로 나열된 두 박스의 간격은 둘중 큰 값을 선택한다.
+
+박스 사이징(box-sizing)
+width, height 값에 padding 이나 border 영역은 포함되지 않음. width가 100%로 설정되었을 경우 패딩이나 보더 속성을 추가할 수 없음
+CSS3부터는 box-sizeing 속성을 추가(padding, border를 width와 heigh 값에 포함)
+
+content-box : 기존 개산방법. width, heigh값에 padding과 border를 포함하지 않음
+border-box : width, heigh 값에 padding과 border를 포함
+p{box-sizeing: border-box;}
+
+테두리 만들기
+둥근 테두리 만드는 방법
+border-radius: top-left-x top-right-x bottom-left-x bottom-right-x /top-left-y top-right-y bottom-left-y bottom-right-y;
+
+테이블 테두리 설정(border-collapse)
+테이블 셀들간에 공백을 처리할지 여부를 결정하는 속성
+separate : 기본값, 셀들을 분리해서 공백으로 만듬
+collapse : 셀들을 합쳐서 사이의 공백을 없앰
+
+
+CSS display
+웹 페이지의 레이아웃을 결정하는 속성
+1 block : display속성값이 block인 요소는 언제나 새로운 라인에서 시작하고, 해당 라인의 모든 너비를 차지한다.
+
+2 inline : 속성값이 인라인인 요소는 새로운 라인에서 시작되지 않음
+-너비도 해당 라인 전체가 아닌 해당 html요소의 내용만큼만 사용
+
+3 inline-block : width와 heigh를 적용할 수 있음. 패딩 마진 가능 line-heigh적용 가능
+요소를 가로로 나열
+
+4 none : 웹 페이지에서 해당 요소가 나타나지 않고 레이아웃에서 사라짐
+
+*visibility: hidden > visible
+
+CSS Form
+css폼 요소의 스타일을 결정
+ㄴinput[type = "submit"]
+ㄴinput[type = "submit"]:focus
+폼요소를 클릭했을 때 변화
+ㄴcursor: pointer
+커서의 모양을 설정해주는
+
+CSS position
+요소의 위치를 결정하는 방식을 설정
+
+1. 정적(static)위치 지정방식
+ㄴ기본값
+ㄴHTML 요소의 위치를 결정하는 기본적인 방식
+ㄴtop, left, right, bottom 속성값을 사용할 수 없음
+ㄴ단순히 웹 페이지 흐름에 따라 차례대로 요소들의 위치를 결정하는 방식
+
+2. 상대(relative)위치 지정방식
+ㄴHTML 요소의 기본 위치를 기준으로 위치를 재설정하는 방식
+ㄴ기본 위치는 정적위치 지정방식일 때 결정되는 위치를 의미
+
+
+3. 고정(fixed)위치 지정방식
+ㄴ뷰포트를 기준으로 위치를 설정하는 방식
+ㄴ웹 페이지가 스크롤 되어도 고정위치로 지정된 요소는 항상 같은 곳에 위치
+
+*뷰포트
+ㄴ브라우저들은 viewport로 알려진 가상의 화면을 가지고 있다.
+화면display상의 표시 영역을 뜻함.
+ㄴ데스크탑의 viewport는 브라우저 창의 viewport와 같음
+ㄴ모바일의 viewport는 상하 좌우로 스크롤을 움직이거나 줌인, 줌아웃을 통해
+viewport를 변경하며 사용.
+
+4. 절대(avsolute)위치 지정방식
+
+
+
+
+
+
+
+

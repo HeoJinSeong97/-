@@ -1,0 +1,87 @@
+11. 순서에 따른 가상 클래스 선택자
+클래스를 추가할 필요 없이 요소 중에서 순서에 따라 원하는 특정 요소를 선택
+
+li:first-child
+li요소 중에서 첫번째 해당하는 요소의 스타일을 적용
+li:first-child{color: red;}
+
+중간요소
+li:nth-child(n번째)
+li요소 중에서 n번째에 해당하는 요소의 스타일을 적용
+li:nth-child(2) {color: red;}
+
+li:last-child
+li요소 중에서 마지막 해당하는 요소의 스타일을 적용
+
+
+
+<ul>
+    <li>김사과</li>
+    <li>오렌자</li>
+    <li>바나나</li>
+</ul>
+
+12. 가상 요소 선택자
+::before
+글이나 이미지, 그라데이션 등을 요소 앞에 삽입할 때 사용.
+::after
+글이나 이미지, 그라데이션 등을 요소 뒤에 삽입할 때 사용.
+
+CSS의 컬러 다루기
+1. 색상 이름으로 표현
+    red, blue, yellow등
+2. RGB 색상값으로 표현
+rgb(0~255, 0~255, 0~255)
+rgba(0~255, 0~255, 0~255, 0~1의 소수(투명도))
+p{color: rgb(0, 0, 255)}
+p{color: rgba(0, 0, 255, 0.5)}
+
+3. 16진수 색상값으로 표현
+rgb색상값 16진수로 0~FF까지 범위를 가짐
+p{ color: #0000FF;} -> p{ color: #00F;}
+
+CSS의 텍스트 다루기
+color
+텍스트의 색상을 설정. 기본값 검정.
+
+letter-spacing
+텍스트 내에서 글자 사이의 간격을 설정.
+안 녕 하 세 요 
+
+word-spacing
+텍스트 내에서 단어 사이의 간격을 설정
+안녕하세요.    반갑습니다.
+
+text-align
+텍스트 수평 방향 정렬을 설정
+
+text-indent
+단락의 첫 줄의 들였기를 설정
+
+line-height
+텍스트의 줄 간격(높이)을 설정
+
+text-decoration
+텍스트에 여러가지 효과를 설정하거나 제거하는데 사용
+(none, underline, line-througt, overline)
+
+text-shadow
+텍스트의 그림자 효과를 설정
+선택자{text-shadow: 가로거리 세로거리 번짐정도 색상;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
