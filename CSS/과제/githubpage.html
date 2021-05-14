@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <div id="head">
+                    <div id="h1">
+                        <div id="logo">
+                            <img src="./img/logo.svg" alt="">
+                        </div>
+                        <div id="toggle">
+                            <img src="./img/toggle-btn.svg" alt="">
+                        </div>
+                        <div id="u1">
+                            <ul>
+                                <li><a href="#intro">Personal</a></li>
+                                <li><a href="#map">Open source</a></li>
+                                <li><a href="#chois">Business</a></li>
+                                <li><a href="#">Export</a></li>
+                            </ul>
+                        </div>
+                        <div id="u2">
+                            <ul>
+                                <li><a href="#intro">Pricing</a></li>
+                                <li><a href="#map">Blog</a></li>
+                                <li><a href="#chois">Support</a></li>
+                                <li><input type="text" placeholder="Serch GitHub"></li>
+                                <li><input type="button" value="Sign in"></li>
+                                <li><input type="button" value="Sign up" style="background-color: chartreuse;color: white;font-weight: bold;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <div id="subhead">
+                        <div id="headtxt">
+                            <div>
+                                <p id="intro"><strong>How people build software</strong></p>
+                            </div>
+                            <div>
+                                <p>Millions of developers use GitHub to build personal projects, support their businesses, and work together on open source technologies</p>
+                            </div>
+                        </div>
+                        <div id="headitem">
+                            <input type="text" placeholder="Pick a username">
+                            <input type="text" placeholder="Your email address">
+                            <input type="password" placeholder="Create a password">
+                            <p>Use at least one letter, one numeral, and seven characters.</p>
+                            <input type="button" value="Sign up for GitHub">
+                            <p>By clicking "Sign up for GitHub", your agree to our terms of service and private policy. We'll occasionally send you account related emails.</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div id="info">
+                <div>
+                    <div id="infotxt">
+                        <h4>Welcome home, developers</h4>
+                        <p>GitHub fosters a fest, and collaborative development process that  you work on your own or with others.</p>
+                    </div>
+                    <div id="infovideo">
+                        <video src="./video/[MV] IU(아이유)_LILAC(라일락).mkv" controls></video>
+                    </div>
+                </div>
+                <div id="infophoto">
+                    <div class="photo">
+                        <img src="./img/feature-tile__build.png" alt="">
+                        <div>
+                            <h3>For everything you build</h3>
+                        </div>
+                        <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/feature-tile__work.png" alt="">
+                        <div>
+                            <h3>A better way to work</h3>
+                        </div>
+                        <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/feature-tile__projects.png" alt="">
+                        <div><h3>Millions of project</h3></div>
+                        <p>GitHub is home to millions of open source project. Try one out or get inspired to create your own.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/feature-tile__platform.png" alt="">
+                        <div><h3>One platform, from start to finish</h3></div>
+                        <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="map">
+                <h1>Where is GitHub?</h1>
+                <p>GitHub is where people build sofrware. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.</p>
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1620559643826" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1620559643826",
+                        "key" : "25omv",
+                        "mapWidth" : "600",
+                        "mapHeight" : "320"
+                    }).render();
+                </script>
+            </div>
+            
+        </section>
+        <footer>
+            <div id="fcontain">
+                <div>
+                    <div><button>Sign up for GitHub</button></div>
+                    <div><p>Public project are always free. Work together across unlimited private repsitories for $7/month.</p></div>
+                </div>
+                <div>
+                    <hr>
+                    <div id="foothead">
+                        <ul id="ful1">
+                            <li>©2016 GitHub,inc.</li>
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                            <li>Security</li>
+                            <li>Status</li>
+                            <li>Help</li>
+                        </ul>
+                        <img src="./img/logo.svg" alt="">
+                        <ul id="ful2">
+                            <li>Concat GitHub</li>
+                            <li>API</li>
+                            <li>Training</li>
+                            <li>Shop</li>
+                            <li>Blog</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+</body>
+</html>
