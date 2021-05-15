@@ -1,0 +1,84 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션2</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            background-color: gold;
+            animation: rotate 1.5s infinite alternate, background 1.5s infinite;
+            
+        }
+
+        @keyframes rotate {
+            from{
+                transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform: perspective(300px) rotateX(180deg) rotateY(0deg);
+            }
+            100%{
+                transform: perspective(300px) rotateX(180deg) rotateY(-180deg);
+            }
+        }
+        @keyframes background {
+            from{background-color: gold;}
+            50%{background-color: deeppink;}
+            100%{background-color: gold;}
+        }
+    </style>
+</head>
+<body>
+    <h2>애니메이션2</h2>
+    <div class="box"></div>
+    
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션2</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            background-color: gold;
+            animation: rotate 1.5s infinite alternate, background 1.5s infinite;
+            
+        }
+
+        @keyframes rotate {
+            from{
+                transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform: perspective(300px) rotateX(180deg) rotateY(0deg);
+            }
+            100%{
+                transform: perspective(300px) rotateX(180deg) rotateY(-180deg);
+            }
+        }
+        @keyframes background {
+            from{background-color: gold;}
+            50%{background-color: deeppink;}
+            100%{background-color: gold;}
+        }
+    </style>
+</head>
+<body>
+    <h2>애니메이션2</h2>
+    <div class="box"></div>
+    
+</body>
+>>>>>>> 73afd13311c525319e25742981cea4a4bfd485c6
+</html>
