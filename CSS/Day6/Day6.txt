@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 CSS Animation
 - 요소의 현재 스타일을 다른 스타일로 천천히 변화시킬 수 있음
 - @keyframe 규칙을 사용
@@ -59,6 +60,68 @@ CSS의 우선순위 계산
 
 
 
+=======
+CSS Animation
+- 요소의 현재 스타일을 다른 스타일로 천천히 변화시킬 수 있음
+- @keyframe 규칙을 사용
+
+animation-name
+애니메이션의 이름을 설정
+
+animation-fill-mode
+애니메이션이 끝난 후 어떻게 처리할지 설정
+backwards : 기본설정. 시작되기 전으로 되돌림
+forwards : 애니메이션 키프레임이 100%에 도달했을 때 마지막 키 프레임을 유지
+
+animation-direction
+애니메이션의 진행 방향을 정하는 속성
+reverse : 반대 순서로 진행
+alternate : 정해진 순서로 진행하다가 다시 반대 순서로 진행
+alternate-reverse : 반대 순서로 갔다가 다시 정해진 순서로 진행
+
+animation-iteration-count
+애니메이션이 몇 번 반복될지 설정
+
+animation-duration
+애니메이션이 일어나는 시간을 설정
+
+@keyframe
+시작 : from or 0%
+과정 : 1% 10%..
+끝 : to , 100%;
+
+perspective()
+3D 환경을 만들기 위해 사용자의 관찰자 시첨(투영점)을 구체화하여 입체감을 부여하는 속성
+perspective(200px) > 스크린으로부터 해당 픽셀만큼 떨어진 곳에서 관찰자가 있다는 것을 근거로 구성
+
+
+CSS의 우선순위 계산
+
+0. !important가 적용된 속성
+
+1. 인라인스타일 => 1000점
+<p style="color: red;"></p>
+
+2. id 속성 => 100점
+<p id="user"></p>
+
+3. class 속성이나 속성 선택자 => 10점
+<p class="user"></p>
+<img src="user.png"></img>//src를 사용
+
+4. element => 1점
+<p>ss</p>
+
+*동일한 선택자일 경우 나중에 적용된 것이 우선
+
+2. 내부스타일
+
+
+외부스타일
+
+
+
+>>>>>>> 73afd13311c525319e25742981cea4a4bfd485c6
 =======
 CSS Animation
 - 요소의 현재 스타일을 다른 스타일로 천천히 변화시킬 수 있음
