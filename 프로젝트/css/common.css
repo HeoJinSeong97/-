@@ -328,6 +328,7 @@ h1.loginTit > a > img {width: 100%;}
 .program_list li .btn_more { padding: 10px 0 20px; text-align: center; font-size: 12px;}
 .program_list li .btn_more a { display: inline-block; padding: 5px 7px; border-radius: 3px; background-color: #000; color: #fff;}
 
+.main_rolling_mobile { display: none;}
 
 /* 태블릿화면↓ */
 @media screen and (max-width: 1065px) and (min-width: 801px){

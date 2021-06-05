@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼</title>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style>
+    li { margin-top: 20px; }
+</style>
+</head>
+<body>
+    <h2>폼</h2>
+    <ul>
+        <li class="form-inline">
+            <label for="userid">아이디 : </label>
+            <input type="text" class="form-control" id="userid">
+        </li>
+        <li class="form-inline">
+            <label for="userpw">비밀번호 : </label>
+            <input type="text" class="form-control" id="userpw">
+        </li>
+        <li class="form-inline">
+            생년월일 : 
+            <select name="year" id="year" class="form-control">
+                <option value="">년도를 선택하세요</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select> - 
+            <select name="month" id="month" class="form-control">
+                <option value="">월을 선택하세요</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> -
+            <select name="day" id="day" class="form-control">
+                <option value="">일을 선택하세요</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <li class="form-inline">
+                <input type="checkbox">약관에 동의 하시겠습니까?
+            </li>
+            <li class="form-inline">
+                <button type="submit" class="btn btn-default">가입</button>
+            </li>
+        </li>
+    </ul>
+</body>
+</html>
