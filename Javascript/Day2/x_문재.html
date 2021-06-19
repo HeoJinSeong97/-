@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    문제
+    <script>
+        const stu = {'name':"",'a':0, 'b':0, 'c':0, 'result':0, 'avg':0};
+        stu.name = prompt('이름입력')
+        stu.a = Number(prompt('국어점수입력'))
+        stu.b = Number(prompt('영어점수입력'))
+        stu.c = Number(prompt('수학점수입력'))
+        stu.result = stu.a + stu.b + stu.c;
+        stu.avg = stu.result/3;
+        
+        let student = `
+        국어점수 : ${stu.a}점
+        영어점수 : ${stu.b}점
+        수학점수 : ${stu.c}점
+        총점 : ${stu.result}점
+        평균 : ${stu.avg}점`;
+        console.log(student)
+    </script>
+</body>
+</html>

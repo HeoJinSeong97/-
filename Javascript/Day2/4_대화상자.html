@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    대화상자
+
+    <script>
+        'use strict'
+        alert('확인버튼을 눌러주세요')
+        document.write('확인버튼을 눌렀습니다.')
+
+        let ans = confirm('아무거나')
+        if(ans){
+            document.write('확인을 눌렀습니다.')
+        }else{document.write('취소을 눌렀습니다.') }
+
+        let pt = prompt('입력')
+        document.write(`입력한 데이터 : ${pt}`)
+    </script>
+</body>
+</html>
