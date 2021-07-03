@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>선택자</h2>
+    <p><span>오픈소스</span> 기반의 자바스크립트 라이브러리. <span>문서객체모델(DOM)</span>과 이벤트에 관한 처리를 쉽게 구현할 수 있음 </p>
+    <p><img src="콘서트유.png" alt="아이스크림" style="width: 100%;"></p>
+    <p><button>사진변경</button></p>
+    <script>
+        $(function(){
+            $('p').on('click', function(){
+                console.log('s')
+                $('span').css('fontSize', '50px')
+            })
+
+            $('button').on('click', function(){
+                $('img[alt="아이스크림"]').attr('src', './참이슬유-1.png')
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        var num2 = 10;//전역변수
+
+        function f1() {
+            console.log(num1)
+            num2 = 20;
+        }
+        f1();
+        console.log(num1);
+
+        function f2() {
+            var num2 = 40;
+            console.log(num2)
+        }
+
+        f2();
+        console.log(num2);
+        var num3 = 50;
+
+        if (num3 == 50) {
+            nuym3 ==100;
+        }
+    </script>
+</body>
+</html>

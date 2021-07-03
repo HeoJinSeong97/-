@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="버튼1">
+    <input type="button" id="btn2" value="버튼2">
+    <input type="button" id="btn3" value="버튼3">
+    <script>
+        'use strict'
+        const clickBtn = function(e){
+            switch(e.target.id){
+                case 'btn1':
+                    console.log('버튼1이 눌림')
+                    break;
+                case 'btn2':
+                    console.log('버튼2이 눌림')
+                    break;
+                case 'btn3':
+                    console.log('버튼3이 눌림')
+                    break;
+            }
+        }
+
+        const btn1 = document.getElementById('btn1')
+        const btn2 = document.getElementById('btn2')
+        const btn3 = document.getElementById('btn3')
+
+        btn1.addEventListener('click', clickBtn)
+        btn2.addEventListener('click', clickBtn)
+        btn3.addEventListener('click', (e) =>{
+            console.log(`e.target.id : ${e.target.id}`)
+        })
+    </script>
+</body>
+</html>

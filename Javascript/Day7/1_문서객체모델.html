@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    문서객체모델
+    <ul>
+        <li name="model">html</li>
+        <li>CSS
+        </li>
+        <li class="js">javascrip</li>
+        <li class="js">Ajax</li>
+        <li id="server">Apach</li>
+        <li name = "model">PHP</li>
+    </ul>
+    <script>
+        'use strict';
+        const tagName = document.getElementsByTagName('li');
+        for (let index = 0; index < tagName.length; index++) {
+            console.log(tagName[index])
+            
+        }
+
+        const className = document.getElementsByClassName('js');
+        for (let key in className) {
+            console.log(className[key]);
+        }
+
+        const id = document.getElementById('server');
+        console.log(id);
+
+        const name = document.getElementsByName('model');
+        for (let i of name) {
+            console.log(i);
+        }
+        console.log('==================')
+        const querySelectorAll = document.querySelectorAll('li.js');
+        for (let i of querySelectorAll) {
+            console.log(querySelectorAll[i]);
+        }
+    </script>
+</body>
+</html>

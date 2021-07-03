@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        'use strict';
+        window.onload = function() {
+            const gnb = document.getElementById('gnb');
+            console.log(gnb);
+            console.log(gnb.parentNode);
+            console.log(gnb.children[0])
+            console.log(gnb.children[0].nextElementSibling)
+            console.log(gnb.children[0].children[1])
+            console.log(gnb.children[0].children[1].nextElementSibling)
+            console.log(gnb.children[0].firstChild)
+        }
+    </script>
+</head>
+<body>
+    문서객체모델
+    <div>
+        <nav id="gnb">
+            <ul>
+                <li class="first">내용1</li>
+                <li>내용2</li>
+                <li>내용3</li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>

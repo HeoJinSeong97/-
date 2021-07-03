@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        'use strict'
+        window.onload = function(){
+            const btn = document.getElementById('evenBtn')
+            btn.addEventListener('click', clickBtn)
+            btn.addEventListener('mouseover', mouseOverBtn)
+            btn.addEventListener('mouseout', mouseOutBtn)
+            
+        }
+        const clickBtn = function(){
+                document.getElementById('text').innerHTML = '<b>버튼을 클릭함</b>';
+            }
+        const mouseOverBtn = function(){
+            document.getElementById('text').innerHTML = '<b>버튼에 마우스가 올라감</b>';
+        }
+        const mouseOutBtn = function(){
+            document.getElementById('text').innerHTML = '<b>버튼에 마우스가 나감</b>';
+        }
+        const delEvent = function(){
+            const btn = document.getElementById('evenBtn')
+            btn.removeEventListener('click', clickBtn)
+            btn.removeEventListener('mouseover', mouseOverBtn)
+            btn.removeEventListener('mouseout', mouseOutBtn)
+        }
+        
+    </script>
+</head>
+<body>
+    <p><button id="evenBtn">이벤트버튼</button></p>
+    <p><button id="delBtn" onclick="delEvent()">이벤트삭제버튼</button></p>
+    <p id="text"></p>
+</body>
+</html>
