@@ -1,0 +1,43 @@
+DB접속
+
+mysqki_connect("db위치", "아이디", "비밀번호", "디비명") or die("연결실패시메시지");
+쿼리 실행
+
+mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
+
+Ajax(Asynchronous Javascript And XML)
+- 웹페이지 전체를 다시 로딩하지 않고 백그라운드 영역에서 서버와 통신해서 그 결과를 리턴받고 웹 페이지 일부를 갱신할 수 있게 하는 기술
+
+Ajax의 장점
+- 웹페이지 전체를 다시 로딩하지 않아도 일부분만을 갱신할 수 있음
+- 웹 페이지가 완전히 로드된 후에 서버로 데이터 요청을 보낼 수 있음
+- 백그라운드 영역에서 서버로 데이터를 전송
+
+단점
+- 바이너리 데이터를 전달할 수 없음
+- 서버 푸싱 방식의 실시간 서비를 만들 수 없음
+
+XMLHttpRequest(XHR) 객체
+
+객체생성 
+const XHR객체명 = new XMLHttpRequest();
+
+상태
+httpRequest
+    onreadystatechange = function(){}
+
+readyState
+0 : XMLHttpRequest 객체 생성
+1 : open() 메서드 실행
+2 : send() 메서드 호출하여 모든 요청
+3 : 요청한 데이터를 처리중
+4 : 요청한 데이터가 완료
+
+open("전송방식", "url주소",동기여부)
+전송방식 : get, post
+url주소 : 요청을 처리할 서버의 파일주소
+동기여부 : 동기식, 비동기식 true : 비동기
+
+send() : get
+send("문자열") : post
