@@ -37,7 +37,7 @@ img, fieldset, a { border: none; }
 
 .hdd, legend { font-size: 0; width: 0; height: 0; line-height: 0; text-indent: -9999px; overflow: hidden; visibility: hidden; position: absolute; top: 0; left: 0; }
 
-body { font-family: 'Nanum Myeongjo', serif; height: 100%; font-size: 16px; letter-spacing: -1px; color: #444; white-space: normal; word-wrap: break-word; line-height: 1; }
+body { height: 100%; font-size: 16px; letter-spacing: -1px; color: #444; white-space: normal; word-wrap: break-word; line-height: 1; }
 
 input, select, textarea, button, form, img, label { vertical-align: middle; }
 
